@@ -15,5 +15,6 @@ def prime?(number)
     counter += 1
     (p*p).step(max,p) { |m| primes[m] = nil }
   end
-  
+
+  primes.compact.include?(number)
 end
